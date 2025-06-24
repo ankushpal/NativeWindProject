@@ -6,6 +6,8 @@
  */
 
 import { NewAppScreen } from '@react-native/new-app-screen';
+import "./global.css";
+
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import Loggin from './src/Login';
 import React from 'react';
