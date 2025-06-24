@@ -1,12 +1,12 @@
-import React from 'react';
 import { View, Text } from 'react-native';
+import React from 'react';
 
 const Loggin = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-2xl font-bold text-blue-600">Hello NativeWind</Text>
+    <View className="flex-1 items-center justify-center bg-blue-500">
+      <Text className="text-white font-bold text-2xl">Hello NativeWind</Text>
     </View>
   );
-}
+};
 
-export default Loggin
+export default Loggin;

@@ -8,6 +8,7 @@
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import Loggin from './src/Login';
+import React from 'react';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -15,7 +16,7 @@ function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Loggin/>
+      <Loggin />
       {/* <NewAppScreen templateFileName="App.tsx" /> */}
     </View>
   );
