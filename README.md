@@ -74,3 +74,28 @@ yarn add nativewind tailwindcss
 npx tailwindcss init
 ```
 
+# ⏱ React Native Timer App
+
+A feature-rich, categorized timer app built with React Native. Supports local notifications, dynamic ticking, bulk actions, background persistence with AsyncStorage, and history tracking.
+
+## 📱 Features
+
+- Create multiple timers with names, durations, and categories
+- Start, Pause, Reset individual or all timers in a category
+- Local notifications on completion (without Firebase)
+- Persists all timers using `AsyncStorage`
+- Categorized timer groups
+- History screen for completed timers
+- Works offline
+
+## 🛠 Tech Stack
+
+- React Native
+- TypeScript
+- AsyncStorage
+- React Navigation
+- Local Notifications (`react-native-notifications` or `PushNotificationIOS` for iOS)
+
+### create release build on android
+
+cd android && ./gradlew assembleRelease && cd ..
