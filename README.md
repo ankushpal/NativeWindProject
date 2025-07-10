@@ -99,3 +99,6 @@ A feature-rich, categorized timer app built with React Native. Supports local no
 ### create release build on android
 
 cd android && ./gradlew assembleRelease && cd ..
+
+## download the apk
+
