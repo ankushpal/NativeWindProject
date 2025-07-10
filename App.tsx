@@ -1,30 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+// App.tsx
+import React, { useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { TimerProvider } from './src/TimerContext';
+import AppNavigator from './src/AppNavigator';
+import { setupNotificationChannel } from './src';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import Login from './src/Login';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
+export default function App() {
+  useEffect(() => {
+    setupNotificationChannel();
+  }, []);
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      {/* <NewAppScreen templateFileName="App.tsx" /> */}
-      <Login/>
-    </View>
+    <TimerProvider>
+      <NavigationContainer>
+         <AppNavigator />
+      </NavigationContainer>
+       
+    </TimerProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;
