@@ -100,5 +100,5 @@ A feature-rich, categorized timer app built with React Native. Supports local no
 
 cd android && ./gradlew assembleRelease && cd ..
 
-## download the apk
+## Download the apk
 
